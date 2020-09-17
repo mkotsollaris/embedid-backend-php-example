@@ -12,7 +12,7 @@ curl_setopt($ch, CURLOPT_URL, 'https://api-gateway-admin.trulioo.com/embedids/to
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POST, 1);
 // add your public key
-curl_setopt($ch, CURLOPT_POSTFIELDS, "{\n\t\"publicKey\": \"ADD_YOUR_EMBEDID_PUBLIC_KEY_HERE\"\n}");
+curl_setopt($ch, CURLOPT_POSTFIELDS, "{\n\t\"publicKey\": \"9e4b85e03e6c4a108de3cd36ba98f79b\"\n}");
 // WARNING: THIS IS FOR DEMO PURPOSES ONLY, PLEASE CONFIGURE YOUR SSL CERTIFICATE ACCORDINGLY
 // https://stackoverflow.com/questions/21187946/curl-error-60-ssl-certificate-issue-self-signed-certificate-in-certificate-cha
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -21,7 +21,7 @@ $headers = array();
 $headers[] = 'Cache-Control: no-cache';
 $headers[] = 'Content-Type: application/json';
 // add your API key
-$headers[] = 'X-Trulioo-Api-Key: {ADD_YOUR_EMBEDID_API_KEY_HERE}';
+$headers[] = 'X-Trulioo-Api-Key: 63e8924a828875ae05995876894ece4e';
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
 $result = curl_exec($ch);
